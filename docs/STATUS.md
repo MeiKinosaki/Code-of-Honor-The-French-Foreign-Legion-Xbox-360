@@ -7,11 +7,12 @@ Last updated: 2026-10-25
 | Area | State | Evidence |
 |---|---|---|
 | Port roadmap | Written | `docs/PORTING_PLAN.md` |
-| CMake host project | Added | `CMakeLists.txt` |
+| CMake host project | Added; includes two CTest targets | `CMakeLists.txt` |
 | Runtime bootstrap | Added | `src/core.cpp`, `src/main.cpp` |
-| Smoke test | Added, execution pending | `tests/smoke_test.cpp` |
-| Host CI | Workflow file added, run not yet verified | `.github/workflows/host-ci.yml` |
+| Runtime smoke test | Added, execution pending | `tests/smoke_test.cpp` |
+| Platform abstraction compile test | Added to CMake, execution pending | `tests/platform_interfaces_compile.cpp` |
 | Platform subsystem interfaces | Added | `include/coh/platform/interfaces.hpp` |
+| Host CI | Workflow file added; run result not verified | `.github/workflows/host-ci.yml` |
 | Original engine integration | Not started | Original source/dependency audit required |
 | Xbox 360 cross-build | Not verified | Toolchain and target configuration required |
 | Xenon.elf / default.xex | Not produced | No verified target build yet |
